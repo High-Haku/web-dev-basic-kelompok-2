@@ -1,0 +1,243 @@
+@font-face {
+    font-family: PoetsenOne;
+    src: url(./fonts/PoetsenOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: SansitaOne;
+    src: url(./fonts/SansitaOne.ttf) format("truetype")
+}
+
+body {
+    font-family: PoetsenOne;
+    min-height: 100vh;
+}
+
+.navbar {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 18px
+}
+
+.navbar-brand {
+    font-family: SansitaOne, cursive;
+    font-size: 24px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+    transition: 200ms;
+}
+
+.navbar-brand:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    
+}
+
+.nav-item{
+    margin: 0 10px ;
+    transition: 500ms;
+}
+
+.nav-item button{
+    transition: 300ms;
+}
+
+.nav-item button:hover {
+    opacity: 0.8;
+}
+
+.nav-item button a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link {
+    padding: 0;
+    position: relative;
+    transition: 300ms;
+}
+
+.nav-link:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.nav-link img {
+    position: relative;
+    bottom: 3px;
+}
+
+.user {
+    font-family: "PoetsenOne";
+    color: #EECD49;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+a {
+    cursor: pointer;
+}
+
+.sidebar {
+    padding: 0;
+}
+
+#search {
+    display: inline;
+    width: 80%;
+    margin: 0;
+}
+
+.sidebar button {
+    width: 15%;
+    font-family: 'Pragati Narrow', sans-serif;
+    padding: 0;
+    margin-bottom: 4px;
+    font-size: 15px;
+    height: 35px;
+}
+
+.sidebar h3 {
+    font-size: 1em;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 0;
+    color: #8DB6D6 ;
+    transition:100ms;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+    color: #125DA1;
+}
+
+.sidebar a.active {
+    font-weight: bold;
+    color: #125DA1 ;
+}
+
+.list-group-item  {
+    background: none;
+}
+
+.content h2 {
+    font-variant: small-caps;
+}
+
+.card {
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.13);
+    text-align: center;
+    margin:5px 10px 40px 10px;
+    min-width: 180px;
+    width: 30%;
+}
+
+.card-text {
+    color: #3C8D2F;
+    font-size: 18px;
+}
+
+.card img {
+    padding: 5px;
+    border-radius: 10px ;
+}
+
+.card input{
+    text-align: center;
+    width: 40px;
+    padding: 0;
+    margin:0;
+    border: 2px solid #E5E5E5;
+}
+
+.card .btn-group a {
+    border: 2px solid #E5E5E5;
+    background-color: none;
+}
+
+.card .btn-group a:hover {
+    border: 2px solid #e5e5e500;
+    background-color: #ccc ;
+}
+
+/*  Footer ///////////////////////////////////// */
+
+.footer {
+    height: 300px;
+    background-color: #3A3A3A;
+    font-family: "Pragati Narrow";
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+}
+
+.footer .info {
+    height: 270px;
+    font-size: 18px;
+}
+
+.brand {
+    font-family: SansitaOne, cursive;
+    font-size: 24px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+    transition: 200ms;
+    color: inherit;
+}
+
+.brand:hover {
+    opacity: 0.8;
+    color: inherit;
+}
+
+.social a img{
+    transition: 500ms;
+}
+
+.social a img:hover {
+    transform: rotateZ(360deg);
+}
+
+.footer .copy {
+    height: 30px;
+    background-color: #EECD49;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+.footer .copy a{
+    display: inline;
+    width: auto;
+    padding: 0;
+    color: #125DA1;
+}
+
+
+/*  Utilities ///////////////////////////////////// */
+
+.bg-blue {
+    background-color: #53ABED;
+}
+
+.btn-blue{
+    color: white;
+    background-color: #53ABED;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
