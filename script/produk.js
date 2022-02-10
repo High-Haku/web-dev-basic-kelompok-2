@@ -1,5 +1,7 @@
 import { formatRupiah } from "./utilities.js";
 
+const isLogin = !!sessionStorage.getItem('isLogin') ? sessionStorage.getItem('isLogin') : false;;
+
 const content = document.querySelector(".content");
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search");
@@ -52,13 +54,18 @@ document.addEventListener("click", (e) => {
 
     // tambah item ke keranjang ////////////////////////
     if (e.target.classList.contains("tambah")) {
-        const nama = e.target.parentElement.parentElement.id;
-        const qtyItem = e.target.parentElement.querySelector("input").value;
+        if (!isLogin) {
+            const yes = confirm("Maaf anda belum login. Harapa login terlebih dahulu");
+            if (yes) window.location = "login.html"
+        } else {
+            const nama = e.target.parentElement.parentElement.id;
+            const qtyItem = e.target.parentElement.querySelector("input").value;
 
-        if (qtyItem < 1) alert("Jumlah item tidak boleh kurang dari 1");
-        else tambahKeranjang(nama, qtyItem);
+            if (qtyItem < 1) alert("Jumlah item tidak boleh kurang dari 1");
+            else tambahKeranjang(nama, qtyItem);
 
-        toast();
+            toast();
+        }
     }
 });
 
