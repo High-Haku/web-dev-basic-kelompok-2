@@ -1,4 +1,4 @@
-import { formatRupiah } from "./utilities.js";
+import { formatRupiah, findDataUser } from "./utilities.js";
 
 const checkoutItems = !!sessionStorage.getItem('checkout') ? JSON.parse(sessionStorage.getItem('checkout')) : window.location = "produk.html";
 let nomor = 1;
@@ -18,6 +18,13 @@ function addProduk(item) {
     totalBerat = +totalBerat + +item.jumlah;
     nomor++;
 }
+
+// Menampilkan data user /////////////////////////////////////////////////
+const userElement = document.querySelector('#user');
+const alamatElement = document.querySelector('#alamat');
+const user = findDataUser(sessionStorage.getItem('isLogin'));
+userElement.innerHTML = `<b>Rumah</b> - ${user.nama[0].toUpperCase() + user.nama.substr(1)} (${user.nomor})`;
+if (user.alamat) alamatElement.value = user.alamat;
 
 // Kalkulasi ongkos kirim ///////////////////////////////////////////////
 let ongkosPerKilo = 10000; //default value jne reguler

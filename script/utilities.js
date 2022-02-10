@@ -22,3 +22,16 @@ export function getData() {
             .catch((error) => reject(error))
     })
 }
+
+export function findDataUser(target) {
+    const users = JSON.parse(localStorage.getItem('data-user'));
+    let result;
+    users.forEach(user => {
+        if (user.nama.toLowerCase() == target.toLowerCase()) result = user;
+    })
+    return result;
+}
+
+export function getAllDataUser() {
+    return JSON.parse(localStorage.getItem('data-user'));
+}

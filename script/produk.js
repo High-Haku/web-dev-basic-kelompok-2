@@ -138,8 +138,11 @@ function clearCategoryClass() {
 
 // Toast System //////////////////////////
 var toastLiveExample = document.getElementById('liveToast');
+const toastBody = document.querySelector('.toast-body');
 
 function toast() {
     var toast = new bootstrap.Toast(toastLiveExample);
     toast.show();
 }
+
+toastBody.onclick = () => location.replace('cart.html');
