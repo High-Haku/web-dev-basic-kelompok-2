@@ -1,0 +1,81 @@
+table {
+    font-family: "Pragati Narrow";
+}
+
+body {
+    min-height: 100vh;
+}
+
+.jumlah-container {
+    max-width: 45px;
+    height: 100%;
+    margin-top: 2px;
+    font-size: 12px;
+    font-family: PoetsenOne;
+}
+
+.jumlah {
+    flex: 1;
+    height: 20px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 1px;
+    background-color: white;
+}
+
+button.jumlah {
+    padding: 0;
+    background-color: #CFE2FF;
+}
+
+.total div {
+    min-width: 110px;
+}
+
+.total h5 {
+    font-size: 14px;
+}
+
+.total h4 {
+    font-size: 20px;
+    color: #3C8D2F;
+}
+
+.btn-footer {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #53ABED;
+    border: 1px solid #53ABED;
+    background-color: white;
+    transition: 300ms;
+}
+
+.btn-disabled {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #53ABED;
+    color: white;
+    transition: 300ms;
+    opacity: 0.5;
+}
+
+.btn-footer:hover {
+    border: none;
+    background-color: #53ABED;
+    color: white;
+}
+
+.total .btn-footer {
+    border: none;
+    background-color: #53ABED;
+    color: white;
+}
+
+.total .btn-footer:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}

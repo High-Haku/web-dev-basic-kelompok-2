@@ -1,0 +1,89 @@
+a {
+    cursor: pointer;
+}
+
+.sidebar {
+    padding: 0;
+}
+
+#search {
+    display: inline;
+    width: 80%;
+    margin: 0;
+}
+
+.sidebar button {
+    width: 15%;
+    font-family: 'Pragati Narrow', sans-serif;
+    padding: 0;
+    margin-bottom: 4px;
+    font-size: 15px;
+    height: 35px;
+}
+
+.sidebar h3 {
+    font-size: 1em;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 0;
+    color: #8DB6D6 ;
+    transition:100ms;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+    color: #125DA1;
+}
+
+.sidebar a.active {
+    font-weight: bold;
+    color: #125DA1 ;
+}
+
+.list-group-item  {
+    background: none;
+}
+
+.content h2 {
+    font-variant: small-caps;
+}
+
+.card {
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.13);
+    text-align: center;
+    margin:5px 10px 40px 10px;
+    min-width: 180px;
+    width: 30%;
+}
+
+.card-text {
+    color: #3C8D2F;
+    font-size: 18px;
+}
+
+.card img {
+    padding: 5px;
+    border-radius: 10px ;
+}
+
+.card input{
+    text-align: center;
+    width: 40px;
+    padding: 0;
+    margin:0;
+    border: 2px solid #E5E5E5;
+}
+
+.card .btn-group a {
+    border: 2px solid #E5E5E5;
+    background-color: none;
+}
+
+.card .btn-group a:hover {
+    border: 2px solid #e5e5e500;
+    background-color: #ccc ;
+}
