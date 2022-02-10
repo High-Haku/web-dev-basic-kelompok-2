@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sansita&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sansita&display=swap" rel="stylesheet" />
 
     <title>Register</title>
     <link rel="stylesheet" href="./style/register.css">
 </head>
+
 <body>
     <div class="container">
         <div class="title">Registrasi</div>
-        <form>
+        <form id="form">
             <div class="user-info">
                 <div class="input-box">
                     <span class="details">Nama lengkap</span>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Nomor Handphone</span>
-                    <input type="text" placeholder="masukan nomor handphone" class="nomor" required>
+                    <input type="number" placeholder="masukan nomor handphone" class="nomor" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
@@ -39,14 +39,15 @@
                     <input type="password" placeholder="masukan password kembali" class="password2" required>
                 </div>
             </div>
-        <div class="button">
-            <button type="button" class="submit">Register</button>
-        </div>
-        <div class="Loginback">
-            Sudah punya akun?<a href="login.html">Klik disini</a>
-        </div>
-    </form>
+            <div class="button">
+                <button type="submit" class="submit">Register</button>
+            </div>
+            <div class="Loginback">
+                Sudah punya akun?<a href="login.html">Klik disini</a>
+            </div>
+        </form>
     </div>
-    <script src="./register.js"></script>
+    <script src="./script/register.js"></script>
 </body>
+
 </html>

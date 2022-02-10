@@ -1,0 +1,120 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(181, 181, 182);
+}
+
+ul.menu li a {
+    font-size: 18px;
+    transition: 400ms;
+    font-family: PoetsenOne;
+}
+
+ul li a:hover {
+    color: #125DA1;
+    font-size: 1.1em;
+}
+
+ul li a.active {
+    color: #125DA1;
+}
+
+.container {
+    max-width: 900px;
+    min-height: 90vh;
+}
+
+.box {
+    border-radius: 10px;
+    box-shadow: 0 0 5px -0 rgb(190, 189, 189);
+    font-family: "Pragati Narrow";
+}
+
+.box h5 {
+    font-family: PoetsenOne;
+}
+
+.data-diri h5 {
+    color: rgb(112, 112, 114);
+}
+
+.data-diri .row {
+    margin: 20px 0;
+}
+
+.inputan {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(228, 228, 228);
+    color: gray;
+    font-size: 16px;
+}
+
+.gender {
+    font-family: PoetsenOne;
+    color: gray;
+}
+
+textarea#alamat {
+    overflow: hidden;
+    resize: none;
+}
+
+button.edit {
+    width: 25%;
+    padding: 10px 0;
+}
+
+button.foto {
+    padding: 10px 0;
+}
+
+.img-thumbnail {
+    width: 200px;
+    object-fit: cover;
+}
+
+.foto::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.foto::before {
+    margin: auto;
+    width: 200px;
+    content: 'Pilih Foto';
+    display: block;
+    background: #53ABED;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 10pt;
+    border: none;
+    font-family: PoetsenOne;
+    color: white;
+    text-align: center;
+}
+
+.foto:hover::before {
+    border-color: black;
+}
+
+.foto:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+@media only screen and (min-width:768px) and (max-width: 1199px) {}

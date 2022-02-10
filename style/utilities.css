@@ -84,6 +84,7 @@ body {
 
 .user {
     font-family: "PoetsenOne";
+    font-size: 16px;
     color: #EECD49;
 }
 
@@ -164,6 +165,9 @@ body {
     color: white;
     background-color: #53ABED;
     transition: 400ms;
+    border: none;
+    border-radius: 5px;
+    font-family: PoetsenOne;
 }
 
 .btn-blue:hover {
